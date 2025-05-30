@@ -37,7 +37,7 @@ class ODEExperiment:
         self.batch_size = 64
 
     def load_NN(self):
-        file_path = "path/to/the\pretrained/weights.pth"
+        file_path = "path/to/the/pretrained/weights.pth"
         self.net.load_state_dict(torch.load(file_path, map_location=self.device))
         self.net.to(self.device)
         print(f"Model weights loaded from {file_path}")
